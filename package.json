@@ -1,0 +1,38 @@
+{
+  "name": "syntella-language-server",
+  "version": "0.1.0",
+  "description": "Editor-agnostic launcher for the Syntella language server (`syt lsp`).",
+  "license": "MIT",
+  "author": "Auren Nunes",
+  "homepage": "https://syntella.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aurennunes/syntella-language-server.git"
+  },
+  "keywords": [
+    "syntella",
+    "language-server",
+    "lsp",
+    "syt"
+  ],
+  "type": "commonjs",
+  "bin": {
+    "syntella-language-server": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p ./",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "typescript": "^5.4.0"
+  }
+}
