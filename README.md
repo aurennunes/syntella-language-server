@@ -16,7 +16,9 @@ Served by `syt lsp` (negotiated at `initialize`, `positionEncoding: utf-8`):
 - **Hover.**
 - **Go to definition.**
 - **Document symbols** (outline, breadcrumbs).
-- **Completion**, triggered on `.`.
+- **Completion**, triggered on `.` — keywords, builtins, types, `use`-able
+  modules (stdlib and native: `net`/`ws`/`crypto`/`ui`/...), and module members
+  (including the `ui` desktop-GUI methods).
 - **Document formatting** (`syt fmt`).
 
 ## Install
